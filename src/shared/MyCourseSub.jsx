@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { FaLongArrowAltRight } from 'react-icons/fa';
 
-const MyCourseSub = ({cou}) => {
-    const {_id,course_id,course_name,course_image}=cou;
+const MyCourseSub = ({course}) => {
+    const {_id,course_id,course_name,course_image}=course;
 
     const navigate = useNavigate();
 

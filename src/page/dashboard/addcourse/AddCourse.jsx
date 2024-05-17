@@ -10,7 +10,7 @@ const AddCourse = () => {
     const auth = UseAuth();
     const { user } = auth;
 
-   const url = `http://localhost:5000/apply?email=${user?.email}`;
+   const url = `https://skill-share-server-se.vercel.app/apply?email=${user?.email}`;
    useEffect(() => {
        fetch(url)
            .then(res => res.json())

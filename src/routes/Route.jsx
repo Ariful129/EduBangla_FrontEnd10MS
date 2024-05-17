@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Error from "../page/course/Errors";
 import Main from "../layout/Main";
 import Home from "../page/home/Home";
 import SignUp from "../authe/SignUp";
@@ -16,7 +17,6 @@ import AddCourse from "../page/dashboard/addcourse/AddCourse";
 import CourseStatus from "../page/dashboard/coursestatus/CourseStatus";
 import Create from "../page/dashboard/addcourse/Create";
 import YourCourse from "../page/dashboard/yourcoursedetails/YourCourse";
-import Error from "../page/course/error";
 import MyProfile from "../shared/MyProfile";
 import MyCourse from "../shared/MyCourse";
 import About from "../shared/About";
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
         {
           path:'/courses/:id',
           element:<PrivateRoute><CourseDetails ></CourseDetails></PrivateRoute>,
-          loader: ({params})=>fetch(`http://localhost:5000/courses/${params.id}`)
+          loader: ({params})=>fetch(`https://skill-share-server-se.vercel.app/courses/${params.id}`)
         },
         {
            path:'/demo',
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
         {
           path:'addnewcourse/:course_id',
           element:<Create></Create>,
-          loader: ({params}) => fetch(`http://localhost:5000/applyadmin/${params.course_id}`)
+          loader: ({params}) => fetch(`https://skill-share-server-se.vercel.app/applyadmin/${params.course_id}`)
         }
       ]
     },
@@ -130,7 +130,7 @@ const router = createBrowserRouter([
         // {
         //   path: 'updateItem/:id',
         //   element: <AdminRoute><UpdateItem></UpdateItem></AdminRoute>,
-        //   loader: ({params}) => fetch(`http://localhost:5000/menu/${params.id}`)
+        //   loader: ({params}) => fetch(`https://skill-share-server-se.vercel.app/menu/${params.id}`)
         // },
         // {
         //   path: 'users',

@@ -12,7 +12,7 @@ const Apply = () => {
     const axiosSecure=USeAxioseSecure()
    // const [myappli, setMyappli] = useState([]);
 
-    // const url = `http://localhost:5000/apply?email=${user?.email}`;
+    // const url = `https://skill-share-server-se.vercel.app/apply?email=${user?.email}`;
     // useEffect(() => {
     //     fetch(url)
     //         .then(res => res.json())

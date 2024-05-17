@@ -3,7 +3,7 @@
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-const Error = () => {
+const Errors = () => {
   const searchData = new URLSearchParams(window.location.search);
   const message = searchData.get('message');
   
@@ -29,4 +29,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default Errors;

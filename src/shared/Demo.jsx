@@ -5,7 +5,7 @@ import UseTank from "../hooks/UseTank";
 const Demo = () => {
     // const [users, setUsers] = useState([]); 
     // useEffect(() => {
-    //     fetch('http://localhost:5000/users')
+    //     fetch('https://skill-share-server-se.vercel.app/users')
     //         .then(res => res.json())
     //         .then(data => setUsers(data));
     // }, []);

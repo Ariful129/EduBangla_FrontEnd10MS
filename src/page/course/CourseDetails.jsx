@@ -50,7 +50,7 @@ const CourseDetails = () => {
          if (message == 'Successful') {
             course.students = [...Email, email];
             console.log('Email add hoice', course.students);
-            fetch(`http://localhost:5000/courses/${course._id}`, {
+            fetch(`https://skill-share-server-se.vercel.app/courses/${course._id}`, {
                method: "PUT",
                headers: {
                   'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ const CourseDetails = () => {
    const { course_image, course_name, starting_date, price, Modules, num_mod, instructors } = course;
    const pay = async () => {
       try {
-         const { data } = await axios.post('http://localhost:5000/api/bkash/payment/create', { amount: price, orderId: 1 }, { withCredentials: true })
+         const { data } = await axios.post('https://skill-share-server-se.vercel.app/api/bkash/payment/create', { amount: price, orderId: 1 }, { withCredentials: true })
          if (!luck)
             window.location.href = data.bkashURL
       } catch (error) {

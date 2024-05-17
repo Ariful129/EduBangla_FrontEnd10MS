@@ -5,13 +5,13 @@ import AdminSub from "./AdminSub";
 const Admin = () => {
      const [applica, setApplica] = useState([]); 
     useEffect(() => {
-        fetch('http://localhost:5000/applyadmin')
+        fetch('https://skill-share-server-se.vercel.app/applyadmin')
             .then(res => res.json())
             .then(data => setApplica(data));
     }, []);
 
     const handleBookingConfirm = id => {
-        fetch(`http://localhost:5000/applyadmin/${id}`, {
+        fetch(`https://skill-share-server-se.vercel.app/applyadmin/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

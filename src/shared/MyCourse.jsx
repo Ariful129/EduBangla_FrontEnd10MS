@@ -7,11 +7,10 @@ const MyCourse = () => {
     const { user } = useContext(AuthContext);
     const [All_Courses, setAll_Courses] = useState([]);
     useEffect(()=>{
-         fetch('http://localhost:5000/courses')
+         fetch('https://skill-share-server-se.vercel.app/courses')
          .then(res=>res.json())
          .then(data=>{
           console.log('i am form courses.jsx');
-          console.log(data);
           setAll_Courses(data)
          })
     },[])
@@ -26,7 +25,8 @@ const MyCourse = () => {
         <div className="mt-8">
              <div className="grid grid-cols-4 gap-6">
              {filteredCourses.map(course => (
-              <MyCourseSub key={course.course_id} cou={course}></MyCourseSub>
+              <MyCourseSub key={course.course_id} 
+                    course={course}></MyCourseSub>
                ))}
              </div>
         </div>
