@@ -7,7 +7,7 @@ const MyCourse = () => {
     const { user } = useContext(AuthContext);
     const [All_Courses, setAll_Courses] = useState([]);
     useEffect(()=>{
-         fetch('https://skill-share-server-se.vercel.app/courses')
+         fetch('https://skill-share-server-se.vercel.app/courses', { mode: 'no-cors' })
          .then(res=>res.json())
          .then(data=>{
           console.log('i am form courses.jsx');
