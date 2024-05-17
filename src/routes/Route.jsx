@@ -10,7 +10,7 @@ import CourseDetails from "../page/course/CourseDetails";
 import Demo from "../shared/Demo";
 import PrivateRoute from "./PrivateRoute";
 import Dashbord from "../layout/Dashbord";
-import Procedure from "../page/dashboard/proedure/Procedure";
+import Procedure from "../page/dashboard/procedure/Procedure";
 import Apply from "../page/dashboard/apply/Apply";
 import Admin from "../page/dashboard/admin/Admin";
 import AddCourse from "../page/dashboard/addcourse/AddCourse";
