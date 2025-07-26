@@ -1,7 +1,7 @@
 [
     {
         "course_id": 1,
-        "course_name": "PHP Web Development",
+        "course_name": "PHP Web Development", 
         "course_image": "https://i.ibb.co/X8MX2P2/card1.jpg",
         "modules": [
             {"module_id": 1, "module_name": "Introduction to PHP","module_bg":"bg-green-400"},
