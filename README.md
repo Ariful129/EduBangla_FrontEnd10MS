@@ -1,10 +1,7 @@
-# Skill Share Platform
+# EduBangla_FrontEnd10MS
 
 A skill-sharing marketplace built with the MERN stack where users can buy and sell projects, courses, and digital skills.
 
-## 🚀 Live Demo
-
-**Frontend:** [https://skill-share-client-final1.vercel.app/](https://skill-share-client-final1.vercel.app/)
 
 ## ✨ Features
 
@@ -25,29 +22,7 @@ A skill-sharing marketplace built with the MERN stack where users can buy and se
 - **Payment**: Stripe integration
 - **Deployment**: Vercel
 
-## 🔧 Quick Start
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Ariful129/Skill_Share_Client_Final1.git
-   cd Skill_Share_Client_Final1
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**
-   ```env
-   VITE_API_URL=your_backend_url
-   VITE_STRIPE_PUBLIC_KEY=your_stripe_public_key
-   ```
-
-4. **Start development server**
-   ```bash
-   npm run dev
-   ```
 
 ## 📡 Main API Endpoints
 
